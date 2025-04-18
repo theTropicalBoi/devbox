@@ -18,6 +18,7 @@
 
 
 ### Steps:
-1. Download `json-server` package with: `npm add json-server@1.0.0-beta.3`
-2. Launch server with: `npm json-server db.json`
-3. Open the `index.html`
+1. Go to `cd Movie_Watchlist_\(Vanilla_JS\)`
+1. Download the prerequisite/package with  with: `pnpm install`
+2. Launch server with: `pnpm json-server db.json`
+3. Open the `index.html` (with live server or ...)
