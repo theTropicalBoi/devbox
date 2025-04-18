@@ -1,0 +1,108 @@
+#color-palette {
+  color: #F2545B;
+  color: #A93F55;
+  color: #19323C;
+  color: #F3F7F0;
+  color: #8C5E58;
+}
+
+body {
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding-bottom: 3rem;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #19323C;
+  padding: 1rem 2rem;
+  color: #F3F7F0;
+  border-radius: 9px;
+}
+
+nav a {
+  color: #F3F7F0;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #F2545B;
+}
+
+nav a::after {
+  text-decoration: none;
+  color: #F3F7F0;
+}
+.addMovieFormSection {
+  padding: 3rem;
+  margin: 1rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #A93F55;
+}
+
+#movieForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#movieForm > * {
+  box-sizing: border-box;
+  padding: 3px;
+  margin-bottom: 1rem;
+}
+
+#movieForm > .firstMovieFormColumn {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#movieForm > select {
+  flex: 1 1 30%;
+}
+
+#movieForm > .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: auto;
+  margin: 0;
+}
+
+#movieForm button {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: #19323C;
+  text-align: center;
+  color: #F3F7F0;
+  width: 100%;
+  z-index: 10;
+}
+
+footer a {
+  color: inherit;
+}

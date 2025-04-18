@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Movie Watchlist</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">🎬 My Movie Watchlist</a>
+    </nav>
+  </header>
+
+  <!-- Add Movie Form -->
+  <section class="addMovieFormSection">
+    <form id="movieForm">
+      <input class="firstMovieFormColumn" type="text" id="title" placeholder="Movie Title" required />
+      <input class="firstMovieFormColumn " type="year" id="year" placeholder="Year" required />
+      <br>
+      <select id="type" placeholder="Type">
+        <option value="" >Type</option>
+        <!-- TODO - Make the type populated dynamically here -->
+        <option value="Movie">Movie</option>
+        <option value="Series">Series</option>
+      </select>
+      <select id="genre">
+        <option value="">Genre</option>
+        <!-- TODO - Make the genres populated dynamically here -->
+         <option value="Action">Action</option>
+         <option value="Animation">Animation</option>
+         <option value="Biography">Biography</option>
+         <option value="Comedy">Comedy</option>
+         <option value="Crime">Crime</option>
+         <option value="Documentary">Documentary</option>
+         <option value="Drama">Drama</option>
+         <option value="Fantasy">Fantasy</option>
+         <option value="French Cult">French Cult</option>
+         <option value="Sci-Fi">Sci-Fi</option>
+         <option value="Thriller">Thriller</option>
+         <option value="Western">Western</option>
+      </select>
+      <select id="platform">
+        <option value="">Platform</option>
+        <!-- TODO - Make the platforms list populated dynamically here -->
+        <option value="Netflix">Netflix</option>
+        <option value="Disney+">Disney+</option>
+        <option value="Apple TV">Apple TV</option>
+        <option value="YouTube">YouTube</option>
+        <option value="DVD / Blu-Ray">DVD / Blu-Ray</option>
+        <option value="Digital">Digital</option>
+      </select>
+      <br>
+      <label class="checkbox" for="checkbox">Watched ?</label>
+      <input class="checkbox"" type="checkbox" name="watched" id="watched" value="watched">
+      <br>
+      <button type="submit">Add Movie</button>
+    </form>
+  </section>
+
+
+  <!-- Filter Section -->
+
+
+  <!-- Movie List -->
+  <ul id="movieList"></ul>
+
+  <footer>
+    <p>🎬 My Movie Watchlist, Made by <a href="https://github.com/theTropicalBoi">Shaan SOMARCHAND</a>.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
